@@ -12,14 +12,14 @@ const paths = {
   },
   source: path.resolve(__dirname, 'src'),
   demoDist: path.resolve(__dirname, "dist", "esm", "demo"),
-  es5: path.resolve(__dirname, "dist", "es5"),
+  es6: path.resolve(__dirname, "dist", "es6"),
   esm: path.resolve(__dirname, "dist", "esm")
 };
 
 const commonConfig = {
   output: {
     filename: '[name].js',
-    path: paths.es5,
+    path: paths.es6,
     library: 'rrule',
     libraryTarget: 'umd',
     globalObject: "typeof self !== 'undefined' ? self : this"
