@@ -2,7 +2,6 @@ const webpack = require("webpack");
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const paths = {
   demo: {
@@ -40,12 +39,6 @@ const commonConfig = {
   },
   optimization: {
     minimize: true,
-    minimizer: [
-      new UglifyJsPlugin({
-        exclude: /\.ts$/,
-        include: /\.min\.js$/
-      })
-    ]
   }
 };
 
