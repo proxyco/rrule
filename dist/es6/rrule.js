@@ -230,7 +230,15 @@ const includes = function (arr, val) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "Frequency", function() { return /* reexport */ Frequency; });
+__webpack_require__.d(__webpack_exports__, "Weekday", function() { return /* reexport */ Weekday; });
+__webpack_require__.d(__webpack_exports__, "RRule", function() { return /* reexport */ rrule_RRule; });
+__webpack_require__.d(__webpack_exports__, "RRuleSet", function() { return /* reexport */ rruleset_RRuleSet; });
+__webpack_require__.d(__webpack_exports__, "rrulestr", function() { return /* reexport */ rrulestr; });
 
 // EXTERNAL MODULE: ./src/helpers.ts
 var helpers = __webpack_require__(0);
@@ -2714,11 +2722,6 @@ function rdatesToString(param, rdates, tzid) {
 }
 
 // CONCATENATED MODULE: ./src/index.ts
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Frequency", function() { return Frequency; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "Weekday", function() { return Weekday; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "RRule", function() { return rrule_RRule; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "RRuleSet", function() { return rruleset_RRuleSet; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "rrulestr", function() { return rrulestr; });
 /*!
  * rrule.js - Library for working with recurrence rules for calendar dates.
  * https://github.com/jakubroztocil/rrule
@@ -2757,7 +2760,14 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "fromText", function() { return /* binding */ fromText; });
+__webpack_require__.d(__webpack_exports__, "parseText", function() { return /* reexport */ parseText; });
+__webpack_require__.d(__webpack_exports__, "isFullyConvertible", function() { return /* binding */ isFullyConvertible; });
+__webpack_require__.d(__webpack_exports__, "toText", function() { return /* binding */ toText; });
 
 // CONCATENATED MODULE: ./src/nlp/i18n.ts
 // =============================================================================
@@ -3614,10 +3624,6 @@ function parseText(text, language = i18n) {
 }
 
 // CONCATENATED MODULE: ./src/nlp/index.ts
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fromText", function() { return fromText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isFullyConvertible", function() { return isFullyConvertible; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toText", function() { return toText; });
-/* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "parseText", function() { return parseText; });
 
 
 

@@ -25,7 +25,7 @@
     }
   },
   "scripts": {
-    "build": "yarn lint && tsc && webpack && tsc dist/esm/**/*.d.ts",
+    "build": "yarn lint && tsc --skipLibCheck && webpack && tsc --skipLibCheck dist/esm/**/*.d.ts",
     "lint": "yarn tslint --project . --fix --config tslint.json",
     "test": "TS_NODE_PROJECT=tsconfig.test.json mocha **/*.test.ts",
     "test-ci": "TS_NODE_PROJECT=tsconfig.test.json nyc mocha **/*.test.ts"
@@ -52,9 +52,9 @@
     "@types/mockdate": "^2.0.0",
     "@types/node": "^10.12.18",
     "chai": "^4.1.2",
-    "copy-webpack-plugin": "^4.5.2",
+    "copy-webpack-plugin": "4.5.2",
     "coverage": "^0.0.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "4.5.0",
     "husky": "^1.0.0-rc.13",
     "jquery": "^3.3.1",
     "mocha": "^5.2.0",
@@ -66,9 +66,10 @@
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.0.1",
-    "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0"
+    "typescript": "3.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "4.44.2",
+    "webpack-cli": "4.5.0"
   },
   "standard": {
     "ignore": [
