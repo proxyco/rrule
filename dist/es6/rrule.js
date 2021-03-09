@@ -7,112 +7,30 @@
 		exports["rrule"] = factory(require("luxon"));
 	else
 		root["rrule"] = factory(root["luxon"]);
-})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE__2__) {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE__223__) {
+return /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return isPresent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return isNumber; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return isArray; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return range; });
+/***/ 382:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EN": () => /* binding */ isPresent,
+/* harmony export */   "hj": () => /* binding */ isNumber,
+/* harmony export */   "kJ": () => /* binding */ isArray,
+/* harmony export */   "w6": () => /* binding */ range,
+/* harmony export */   "rx": () => /* binding */ repeat,
+/* harmony export */   "qo": () => /* binding */ toArray,
+/* harmony export */   "Sk": () => /* binding */ padStart,
+/* harmony export */   "Vl": () => /* binding */ split,
+/* harmony export */   "Vy": () => /* binding */ pymod,
+/* harmony export */   "qq": () => /* binding */ divmod,
+/* harmony export */   "cS": () => /* binding */ empty,
+/* harmony export */   "Dw": () => /* binding */ notEmpty,
+/* harmony export */   "q9": () => /* binding */ includes
+/* harmony export */ });
 /* unused harmony export clone */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return repeat; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return toArray; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return padStart; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return split; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return pymod; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return divmod; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return empty; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return notEmpty; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return includes; });
 // =============================================================================
 // Helper functions
 // =============================================================================
@@ -226,23 +144,25 @@ const includes = function (arr, val) {
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
+/***/ 906:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "Frequency", function() { return /* reexport */ Frequency; });
-__webpack_require__.d(__webpack_exports__, "Weekday", function() { return /* reexport */ Weekday; });
-__webpack_require__.d(__webpack_exports__, "RRule", function() { return /* reexport */ rrule_RRule; });
-__webpack_require__.d(__webpack_exports__, "RRuleSet", function() { return /* reexport */ rruleset_RRuleSet; });
-__webpack_require__.d(__webpack_exports__, "rrulestr", function() { return /* reexport */ rrulestr; });
+__webpack_require__.d(__webpack_exports__, {
+  "Frequency": () => /* reexport */ Frequency,
+  "RRule": () => /* reexport */ RRule,
+  "RRuleSet": () => /* reexport */ RRuleSet,
+  "Weekday": () => /* reexport */ Weekday,
+  "default": () => /* binding */ src,
+  "rrulestr": () => /* reexport */ rrulestr
+});
 
 // EXTERNAL MODULE: ./src/helpers.ts
-var helpers = __webpack_require__(0);
-
+var helpers = __webpack_require__(382);
 // CONCATENATED MODULE: ./src/dateutil.ts
 
 /**
@@ -250,7 +170,7 @@ var helpers = __webpack_require__(0);
  * Also handles several incompatibilities between JavaScript and Python
  *
  */
-var dateutil_dateutil;
+var dateutil;
 (function (dateutil) {
     dateutil.MONTH_DAYS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     /**
@@ -369,22 +289,22 @@ var dateutil_dateutil;
     dateutil.toRfc5545DateTime = function (time, utc = true) {
         const date = new Date(time);
         return [
-            Object(helpers["h" /* padStart */])(date.getUTCFullYear().toString(), 4, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCMonth() + 1, 2, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCDate(), 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCFullYear().toString(), 4, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCMonth() + 1, 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCDate(), 2, '0'),
             'T',
-            Object(helpers["h" /* padStart */])(date.getUTCHours(), 2, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCMinutes(), 2, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCSeconds(), 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCHours(), 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCMinutes(), 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCSeconds(), 2, '0'),
             utc ? 'Z' : ''
         ].join('');
     };
     dateutil.toRfc5545Date = function (time) {
         const date = new Date(time);
         return [
-            Object(helpers["h" /* padStart */])(date.getUTCFullYear().toString(), 4, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCMonth() + 1, 2, '0'),
-            Object(helpers["h" /* padStart */])(date.getUTCDate(), 2, '0')
+            (0,helpers/* padStart */.Sk)(date.getUTCFullYear().toString(), 4, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCMonth() + 1, 2, '0'),
+            (0,helpers/* padStart */.Sk)(date.getUTCDate(), 2, '0')
         ].join('');
     };
     dateutil.fromRfc5545DateTime = function (dt) {
@@ -401,8 +321,8 @@ var dateutil_dateutil;
             throw new Error(`Invalid date value: ${dt}`);
         return new Date(Date.UTC(parseInt(bits[1], 10), parseInt(bits[2], 10) - 1, parseInt(bits[3], 10)));
     };
-})(dateutil_dateutil || (dateutil_dateutil = {}));
-/* harmony default export */ var src_dateutil = (dateutil_dateutil);
+})(dateutil || (dateutil = {}));
+/* harmony default export */ const src_dateutil = (dateutil);
 
 // CONCATENATED MODULE: ./src/iterresult.ts
 /**
@@ -496,7 +416,7 @@ class IterResult {
  * IterResult subclass that calls a callback function on each add,
  * and stops iterating when the callback returns false.
  */
-class callbackiterresult_CallbackIterResult extends IterResult {
+class CallbackIterResult extends IterResult {
     constructor(method, args, iterator) {
         super(method, args);
         this.iterator = iterator;
@@ -596,7 +516,7 @@ class Time {
             this.millisecond);
     }
 }
-class datetime_DateTime extends Time {
+class DateTime extends Time {
     static fromDate(date) {
         return new this(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.valueOf() % 1000);
     }
@@ -607,7 +527,7 @@ class datetime_DateTime extends Time {
         this.day = day;
     }
     getWeekday() {
-        return dateutil_dateutil.getWeekday(new Date(this.getTime()));
+        return dateutil.getWeekday(new Date(this.getTime()));
     }
     getTime() {
         return new Date(Date.UTC(this.year, this.month - 1, this.day, this.hour, this.minute, this.second, this.millisecond)).getTime();
@@ -628,7 +548,7 @@ class datetime_DateTime extends Time {
         this.month += months;
         if (this.month > 12) {
             const yearDiv = Math.floor(this.month / 12);
-            const monthMod = Object(helpers["i" /* pymod */])(this.month, 12);
+            const monthMod = (0,helpers/* pymod */.Vy)(this.month, 12);
             this.month = monthMod;
             this.year += yearDiv;
             if (this.month === 0) {
@@ -657,12 +577,12 @@ class datetime_DateTime extends Time {
         }
         while (true) {
             this.hour += hours;
-            const { div: dayDiv, mod: hourMod } = Object(helpers["a" /* divmod */])(this.hour, 24);
+            const { div: dayDiv, mod: hourMod } = (0,helpers/* divmod */.qq)(this.hour, 24);
             if (dayDiv) {
                 this.hour = hourMod;
                 this.addDaily(dayDiv);
             }
-            if (Object(helpers["b" /* empty */])(byhour) || Object(helpers["c" /* includes */])(byhour, this.hour))
+            if ((0,helpers/* empty */.cS)(byhour) || (0,helpers/* includes */.q9)(byhour, this.hour))
                 break;
         }
     }
@@ -674,13 +594,13 @@ class datetime_DateTime extends Time {
         }
         while (true) {
             this.minute += minutes;
-            const { div: hourDiv, mod: minuteMod } = Object(helpers["a" /* divmod */])(this.minute, 60);
+            const { div: hourDiv, mod: minuteMod } = (0,helpers/* divmod */.qq)(this.minute, 60);
             if (hourDiv) {
                 this.minute = minuteMod;
                 this.addHours(hourDiv, false, byhour);
             }
-            if ((Object(helpers["b" /* empty */])(byhour) || Object(helpers["c" /* includes */])(byhour, this.hour)) &&
-                (Object(helpers["b" /* empty */])(byminute) || Object(helpers["c" /* includes */])(byminute, this.minute))) {
+            if (((0,helpers/* empty */.cS)(byhour) || (0,helpers/* includes */.q9)(byhour, this.hour)) &&
+                ((0,helpers/* empty */.cS)(byminute) || (0,helpers/* includes */.q9)(byminute, this.minute))) {
                 break;
             }
         }
@@ -693,14 +613,14 @@ class datetime_DateTime extends Time {
         }
         while (true) {
             this.second += seconds;
-            const { div: minuteDiv, mod: secondMod } = Object(helpers["a" /* divmod */])(this.second, 60);
+            const { div: minuteDiv, mod: secondMod } = (0,helpers/* divmod */.qq)(this.second, 60);
             if (minuteDiv) {
                 this.second = secondMod;
                 this.addMinutes(minuteDiv, false, byhour, byminute);
             }
-            if ((Object(helpers["b" /* empty */])(byhour) || Object(helpers["c" /* includes */])(byhour, this.hour)) &&
-                (Object(helpers["b" /* empty */])(byminute) || Object(helpers["c" /* includes */])(byminute, this.minute)) &&
-                (Object(helpers["b" /* empty */])(bysecond) || Object(helpers["c" /* includes */])(bysecond, this.second))) {
+            if (((0,helpers/* empty */.cS)(byhour) || (0,helpers/* includes */.q9)(byhour, this.hour)) &&
+                ((0,helpers/* empty */.cS)(byminute) || (0,helpers/* includes */.q9)(byminute, this.minute)) &&
+                ((0,helpers/* empty */.cS)(bysecond) || (0,helpers/* includes */.q9)(bysecond, this.second))) {
                 break;
             }
         }
@@ -709,7 +629,7 @@ class datetime_DateTime extends Time {
         if (this.day <= 28) {
             return;
         }
-        let daysinmonth = dateutil_dateutil.monthRange(this.year, this.month - 1)[1];
+        let daysinmonth = dateutil.monthRange(this.year, this.month - 1)[1];
         if (this.day <= daysinmonth) {
             return;
         }
@@ -719,11 +639,11 @@ class datetime_DateTime extends Time {
             if (this.month === 13) {
                 this.month = 1;
                 ++this.year;
-                if (this.year > dateutil_dateutil.MAXYEAR) {
+                if (this.year > dateutil.MAXYEAR) {
                     return;
                 }
             }
-            daysinmonth = dateutil_dateutil.monthRange(this.year, this.month - 1)[1];
+            daysinmonth = dateutil.monthRange(this.year, this.month - 1)[1];
         }
     }
     add(options, filtered) {
@@ -755,7 +675,7 @@ function initializeOptions(options) {
     keys.forEach(key => {
         const value = options[key];
         initializedOptions[key] = value;
-        if (!Object(helpers["c" /* includes */])(rrule_defaultKeys, key))
+        if (!(0,helpers/* includes */.q9)(defaultKeys, key))
             invalid.push(key);
         if (src_dateutil.isDate(value) && !src_dateutil.isValidDate(value))
             invalid.push(key);
@@ -769,28 +689,28 @@ function parseOptions(options) {
     const opts = initializeOptions(options);
     const keys = Object.keys(options);
     // Merge in default options
-    rrule_defaultKeys.forEach(key => {
-        if (!Object(helpers["c" /* includes */])(keys, key) || !Object(helpers["f" /* isPresent */])(opts[key]))
+    defaultKeys.forEach(key => {
+        if (!(0,helpers/* includes */.q9)(keys, key) || !(0,helpers/* isPresent */.EN)(opts[key]))
             opts[key] = DEFAULT_OPTIONS[key];
     });
-    if (Object(helpers["f" /* isPresent */])(opts.byeaster))
-        opts.freq = rrule_RRule.YEARLY;
-    if (!(Object(helpers["f" /* isPresent */])(opts.freq) && rrule_RRule.FREQUENCIES[opts.freq])) {
+    if ((0,helpers/* isPresent */.EN)(opts.byeaster))
+        opts.freq = RRule.YEARLY;
+    if (!((0,helpers/* isPresent */.EN)(opts.freq) && RRule.FREQUENCIES[opts.freq])) {
         throw new Error(`Invalid frequency: ${opts.freq} ${options.freq}`);
     }
     if (!opts.dtstart)
         opts.dtstart = new Date(new Date().setMilliseconds(0));
-    if (!Object(helpers["f" /* isPresent */])(opts.wkst)) {
-        opts.wkst = rrule_RRule.MO.weekday;
+    if (!(0,helpers/* isPresent */.EN)(opts.wkst)) {
+        opts.wkst = RRule.MO.weekday;
     }
-    else if (Object(helpers["e" /* isNumber */])(opts.wkst)) {
+    else if ((0,helpers/* isNumber */.hj)(opts.wkst)) {
         // cool, just keep it like that
     }
     else {
         opts.wkst = opts.wkst.weekday;
     }
-    if (Object(helpers["f" /* isPresent */])(opts.bysetpos)) {
-        if (Object(helpers["e" /* isNumber */])(opts.bysetpos))
+    if ((0,helpers/* isPresent */.EN)(opts.bysetpos)) {
+        if ((0,helpers/* isNumber */.hj)(opts.bysetpos))
             opts.bysetpos = [opts.bysetpos];
         for (let i = 0; i < opts.bysetpos.length; i++) {
             const v = opts.bysetpos[i];
@@ -800,42 +720,42 @@ function parseOptions(options) {
         }
     }
     if (!(Boolean(opts.byweekno) ||
-        Object(helpers["g" /* notEmpty */])(opts.byweekno) ||
-        Object(helpers["g" /* notEmpty */])(opts.byyearday) ||
+        (0,helpers/* notEmpty */.Dw)(opts.byweekno) ||
+        (0,helpers/* notEmpty */.Dw)(opts.byyearday) ||
         Boolean(opts.bymonthday) ||
-        Object(helpers["g" /* notEmpty */])(opts.bymonthday) ||
-        Object(helpers["f" /* isPresent */])(opts.byweekday) ||
-        Object(helpers["f" /* isPresent */])(opts.byeaster))) {
+        (0,helpers/* notEmpty */.Dw)(opts.bymonthday) ||
+        (0,helpers/* isPresent */.EN)(opts.byweekday) ||
+        (0,helpers/* isPresent */.EN)(opts.byeaster))) {
         switch (opts.freq) {
-            case rrule_RRule.YEARLY:
+            case RRule.YEARLY:
                 if (!opts.bymonth)
                     opts.bymonth = opts.dtstart.getUTCMonth() + 1;
                 opts.bymonthday = opts.dtstart.getUTCDate();
                 break;
-            case rrule_RRule.MONTHLY:
+            case RRule.MONTHLY:
                 opts.bymonthday = opts.dtstart.getUTCDate();
                 break;
-            case rrule_RRule.WEEKLY:
+            case RRule.WEEKLY:
                 opts.byweekday = [src_dateutil.getWeekday(opts.dtstart)];
                 break;
         }
     }
     // bymonth
-    if (Object(helpers["f" /* isPresent */])(opts.bymonth) && !Object(helpers["d" /* isArray */])(opts.bymonth)) {
+    if ((0,helpers/* isPresent */.EN)(opts.bymonth) && !(0,helpers/* isArray */.kJ)(opts.bymonth)) {
         opts.bymonth = [opts.bymonth];
     }
     // byyearday
-    if (Object(helpers["f" /* isPresent */])(opts.byyearday) &&
-        !Object(helpers["d" /* isArray */])(opts.byyearday) &&
-        Object(helpers["e" /* isNumber */])(opts.byyearday)) {
+    if ((0,helpers/* isPresent */.EN)(opts.byyearday) &&
+        !(0,helpers/* isArray */.kJ)(opts.byyearday) &&
+        (0,helpers/* isNumber */.hj)(opts.byyearday)) {
         opts.byyearday = [opts.byyearday];
     }
     // bymonthday
-    if (!Object(helpers["f" /* isPresent */])(opts.bymonthday)) {
+    if (!(0,helpers/* isPresent */.EN)(opts.bymonthday)) {
         opts.bymonthday = [];
         opts.bynmonthday = [];
     }
-    else if (Object(helpers["d" /* isArray */])(opts.bymonthday)) {
+    else if ((0,helpers/* isArray */.kJ)(opts.bymonthday)) {
         const bymonthday = [];
         const bynmonthday = [];
         for (let i = 0; i < opts.bymonthday.length; i++) {
@@ -859,19 +779,19 @@ function parseOptions(options) {
         opts.bymonthday = [opts.bymonthday];
     }
     // byweekno
-    if (Object(helpers["f" /* isPresent */])(opts.byweekno) && !Object(helpers["d" /* isArray */])(opts.byweekno)) {
+    if ((0,helpers/* isPresent */.EN)(opts.byweekno) && !(0,helpers/* isArray */.kJ)(opts.byweekno)) {
         opts.byweekno = [opts.byweekno];
     }
     // byweekday / bynweekday
-    if (!Object(helpers["f" /* isPresent */])(opts.byweekday)) {
+    if (!(0,helpers/* isPresent */.EN)(opts.byweekday)) {
         opts.bynweekday = null;
     }
-    else if (Object(helpers["e" /* isNumber */])(opts.byweekday)) {
+    else if ((0,helpers/* isNumber */.hj)(opts.byweekday)) {
         opts.byweekday = [opts.byweekday];
         opts.bynweekday = null;
     }
     else if (opts.byweekday instanceof Weekday) {
-        if (!opts.byweekday.n || opts.freq > rrule_RRule.MONTHLY) {
+        if (!opts.byweekday.n || opts.freq > RRule.MONTHLY) {
             opts.byweekday = [opts.byweekday.weekday];
             opts.bynweekday = null;
         }
@@ -885,43 +805,43 @@ function parseOptions(options) {
         const bynweekday = [];
         for (let i = 0; i < opts.byweekday.length; i++) {
             const wday = opts.byweekday[i];
-            if (Object(helpers["e" /* isNumber */])(wday)) {
+            if ((0,helpers/* isNumber */.hj)(wday)) {
                 byweekday.push(wday);
                 continue;
             }
             const wd = wday;
-            if (!wd.n || opts.freq > rrule_RRule.MONTHLY) {
+            if (!wd.n || opts.freq > RRule.MONTHLY) {
                 byweekday.push(wd.weekday);
             }
             else {
                 bynweekday.push([wd.weekday, wd.n]);
             }
         }
-        opts.byweekday = Object(helpers["g" /* notEmpty */])(byweekday) ? byweekday : null;
-        opts.bynweekday = Object(helpers["g" /* notEmpty */])(bynweekday) ? bynweekday : null;
+        opts.byweekday = (0,helpers/* notEmpty */.Dw)(byweekday) ? byweekday : null;
+        opts.bynweekday = (0,helpers/* notEmpty */.Dw)(bynweekday) ? bynweekday : null;
     }
     // byhour
-    if (!Object(helpers["f" /* isPresent */])(opts.byhour)) {
+    if (!(0,helpers/* isPresent */.EN)(opts.byhour)) {
         opts.byhour =
-            opts.freq < rrule_RRule.HOURLY ? [opts.dtstart.getUTCHours()] : null;
+            opts.freq < RRule.HOURLY ? [opts.dtstart.getUTCHours()] : null;
     }
-    else if (Object(helpers["e" /* isNumber */])(opts.byhour)) {
+    else if ((0,helpers/* isNumber */.hj)(opts.byhour)) {
         opts.byhour = [opts.byhour];
     }
     // byminute
-    if (!Object(helpers["f" /* isPresent */])(opts.byminute)) {
+    if (!(0,helpers/* isPresent */.EN)(opts.byminute)) {
         opts.byminute =
-            opts.freq < rrule_RRule.MINUTELY ? [opts.dtstart.getUTCMinutes()] : null;
+            opts.freq < RRule.MINUTELY ? [opts.dtstart.getUTCMinutes()] : null;
     }
-    else if (Object(helpers["e" /* isNumber */])(opts.byminute)) {
+    else if ((0,helpers/* isNumber */.hj)(opts.byminute)) {
         opts.byminute = [opts.byminute];
     }
     // bysecond
-    if (!Object(helpers["f" /* isPresent */])(opts.bysecond)) {
+    if (!(0,helpers/* isPresent */.EN)(opts.bysecond)) {
         opts.bysecond =
-            opts.freq < rrule_RRule.SECONDLY ? [opts.dtstart.getUTCSeconds()] : null;
+            opts.freq < RRule.SECONDLY ? [opts.dtstart.getUTCSeconds()] : null;
     }
-    else if (Object(helpers["e" /* isNumber */])(opts.bysecond)) {
+    else if ((0,helpers/* isNumber */.hj)(opts.bysecond)) {
         opts.bysecond = [opts.bysecond];
     }
     return { parsedOptions: opts };
@@ -1136,12 +1056,11 @@ function parseWeekday(value) {
 }
 
 // EXTERNAL MODULE: external "luxon"
-var external_luxon_ = __webpack_require__(2);
-
+var external_luxon_ = __webpack_require__(223);
 // CONCATENATED MODULE: ./src/datewithzone.ts
 
 
-class datewithzone_DateWithZone {
+class DateWithZone {
     constructor(date, tzid) {
         this.date = date;
         this.tzid = tzid;
@@ -1164,8 +1083,7 @@ class datewithzone_DateWithZone {
             return this.date;
         }
         try {
-            const datetime = external_luxon_["DateTime"]
-                .fromJSDate(this.date);
+            const datetime = external_luxon_.DateTime.fromJSDate(this.date);
             const rezoned = datetime.setZone(this.tzid, { keepLocalTime: true });
             return rezoned.toJSDate();
         }
@@ -1194,19 +1112,19 @@ function optionsToString(options) {
     for (let i = 0; i < keys.length; i++) {
         if (keys[i] === 'tzid')
             continue;
-        if (!Object(helpers["c" /* includes */])(defaultKeys, keys[i]))
+        if (!(0,helpers/* includes */.q9)(defaultKeys, keys[i]))
             continue;
         let key = keys[i].toUpperCase();
         const value = options[keys[i]];
         let outValue = '';
-        if (!Object(helpers["f" /* isPresent */])(value) || (Object(helpers["d" /* isArray */])(value) && !value.length))
+        if (!(0,helpers/* isPresent */.EN)(value) || ((0,helpers/* isArray */.kJ)(value) && !value.length))
             continue;
         switch (key) {
             case 'FREQ':
-                outValue = rrule_RRule.FREQUENCIES[options.freq];
+                outValue = RRule.FREQUENCIES[options.freq];
                 break;
             case 'WKST':
-                if (Object(helpers["e" /* isNumber */])(value)) {
+                if ((0,helpers/* isNumber */.hj)(value)) {
                     outValue = new Weekday(value).toString();
                 }
                 else {
@@ -1226,11 +1144,11 @@ function optionsToString(options) {
       
                 */
                 key = 'BYDAY';
-                outValue = Object(helpers["m" /* toArray */])(value).map(wday => {
+                outValue = (0,helpers/* toArray */.qo)(value).map(wday => {
                     if (wday instanceof Weekday) {
                         return wday;
                     }
-                    if (Object(helpers["d" /* isArray */])(wday)) {
+                    if ((0,helpers/* isArray */.kJ)(wday)) {
                         return new Weekday(wday[0], wday[1]);
                     }
                     return new Weekday(wday);
@@ -1265,7 +1183,7 @@ function optionsToString(options) {
                 }
                 break;
             default:
-                if (Object(helpers["d" /* isArray */])(value)) {
+                if ((0,helpers/* isArray */.kJ)(value)) {
                     const strValues = [];
                     for (let j = 0; j < value.length; j++) {
                         strValues[j] = String(value[j]);
@@ -1303,14 +1221,14 @@ function formatDateTime(dt, options = {}, prop = DateTimeProperty.START) {
             return prefix + ':' + src_dateutil.toRfc5545DateTime(dt, false);
         }
     }
-    return prefix + new datewithzone_DateWithZone(new Date(dt), options.tzid).toString();
+    return prefix + new DateWithZone(new Date(dt), options.tzid).toString();
 }
 
 // CONCATENATED MODULE: ./src/cache.ts
 
 
 
-class cache_Cache {
+class Cache {
     constructor() {
         this.all = false;
         this.before = [];
@@ -1360,7 +1278,7 @@ class cache_Cache {
         if (what === 'all') {
             cached = this.all;
         }
-        else if (Object(helpers["d" /* isArray */])(cachedObject)) {
+        else if ((0,helpers/* isArray */.kJ)(cachedObject)) {
             // Let's see whether we've already called the
             // 'what' method with the same 'args'
             for (let i = 0; i < cachedObject.length; i++) {
@@ -1382,7 +1300,7 @@ class cache_Cache {
             cached = iterResult.getValue();
             this._cacheAdd(what, cached, args);
         }
-        return Object(helpers["d" /* isArray */])(cached)
+        return (0,helpers/* isArray */.kJ)(cached)
             ? src_dateutil.cloneDates(cached)
             : cached instanceof Date
                 ? src_dateutil.clone(cached)
@@ -1397,39 +1315,39 @@ class cache_Cache {
 // =============================================================================
 // Every mask is 7 days longer to handle cross-year weekly periods.
 const M365MASK = [
-    ...Object(helpers["k" /* repeat */])(1, 31),
-    ...Object(helpers["k" /* repeat */])(2, 28),
-    ...Object(helpers["k" /* repeat */])(3, 31),
-    ...Object(helpers["k" /* repeat */])(4, 30),
-    ...Object(helpers["k" /* repeat */])(5, 31),
-    ...Object(helpers["k" /* repeat */])(6, 30),
-    ...Object(helpers["k" /* repeat */])(7, 31),
-    ...Object(helpers["k" /* repeat */])(8, 31),
-    ...Object(helpers["k" /* repeat */])(9, 30),
-    ...Object(helpers["k" /* repeat */])(10, 31),
-    ...Object(helpers["k" /* repeat */])(11, 30),
-    ...Object(helpers["k" /* repeat */])(12, 31),
-    ...Object(helpers["k" /* repeat */])(1, 7)
+    ...(0,helpers/* repeat */.rx)(1, 31),
+    ...(0,helpers/* repeat */.rx)(2, 28),
+    ...(0,helpers/* repeat */.rx)(3, 31),
+    ...(0,helpers/* repeat */.rx)(4, 30),
+    ...(0,helpers/* repeat */.rx)(5, 31),
+    ...(0,helpers/* repeat */.rx)(6, 30),
+    ...(0,helpers/* repeat */.rx)(7, 31),
+    ...(0,helpers/* repeat */.rx)(8, 31),
+    ...(0,helpers/* repeat */.rx)(9, 30),
+    ...(0,helpers/* repeat */.rx)(10, 31),
+    ...(0,helpers/* repeat */.rx)(11, 30),
+    ...(0,helpers/* repeat */.rx)(12, 31),
+    ...(0,helpers/* repeat */.rx)(1, 7)
 ];
 const M366MASK = [
-    ...Object(helpers["k" /* repeat */])(1, 31),
-    ...Object(helpers["k" /* repeat */])(2, 29),
-    ...Object(helpers["k" /* repeat */])(3, 31),
-    ...Object(helpers["k" /* repeat */])(4, 30),
-    ...Object(helpers["k" /* repeat */])(5, 31),
-    ...Object(helpers["k" /* repeat */])(6, 30),
-    ...Object(helpers["k" /* repeat */])(7, 31),
-    ...Object(helpers["k" /* repeat */])(8, 31),
-    ...Object(helpers["k" /* repeat */])(9, 30),
-    ...Object(helpers["k" /* repeat */])(10, 31),
-    ...Object(helpers["k" /* repeat */])(11, 30),
-    ...Object(helpers["k" /* repeat */])(12, 31),
-    ...Object(helpers["k" /* repeat */])(1, 7)
+    ...(0,helpers/* repeat */.rx)(1, 31),
+    ...(0,helpers/* repeat */.rx)(2, 29),
+    ...(0,helpers/* repeat */.rx)(3, 31),
+    ...(0,helpers/* repeat */.rx)(4, 30),
+    ...(0,helpers/* repeat */.rx)(5, 31),
+    ...(0,helpers/* repeat */.rx)(6, 30),
+    ...(0,helpers/* repeat */.rx)(7, 31),
+    ...(0,helpers/* repeat */.rx)(8, 31),
+    ...(0,helpers/* repeat */.rx)(9, 30),
+    ...(0,helpers/* repeat */.rx)(10, 31),
+    ...(0,helpers/* repeat */.rx)(11, 30),
+    ...(0,helpers/* repeat */.rx)(12, 31),
+    ...(0,helpers/* repeat */.rx)(1, 7)
 ];
-const M28 = Object(helpers["j" /* range */])(1, 29);
-const M29 = Object(helpers["j" /* range */])(1, 30);
-const M30 = Object(helpers["j" /* range */])(1, 31);
-const M31 = Object(helpers["j" /* range */])(1, 32);
+const M28 = (0,helpers/* range */.w6)(1, 29);
+const M29 = (0,helpers/* range */.w6)(1, 30);
+const M30 = (0,helpers/* range */.w6)(1, 31);
+const M31 = (0,helpers/* range */.w6)(1, 32);
 const MDAY366MASK = [
     ...M31,
     ...M29,
@@ -1460,10 +1378,10 @@ const MDAY365MASK = [
     ...M31,
     ...M31.slice(0, 7)
 ];
-const NM28 = Object(helpers["j" /* range */])(-28, 0);
-const NM29 = Object(helpers["j" /* range */])(-29, 0);
-const NM30 = Object(helpers["j" /* range */])(-30, 0);
-const NM31 = Object(helpers["j" /* range */])(-31, 0);
+const NM28 = (0,helpers/* range */.w6)(-28, 0);
+const NM29 = (0,helpers/* range */.w6)(-29, 0);
+const NM30 = (0,helpers/* range */.w6)(-30, 0);
+const NM31 = (0,helpers/* range */.w6)(-31, 0);
 const NMDAY366MASK = [
     ...NM31,
     ...NM29,
@@ -1499,7 +1417,7 @@ const M365RANGE = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365];
 const WDAYMASK = (function () {
     let wdaymask = [];
     for (let i = 0; i < 55; i++)
-        wdaymask = wdaymask.concat(Object(helpers["j" /* range */])(7));
+        wdaymask = wdaymask.concat((0,helpers/* range */.w6)(7));
     return wdaymask;
 })();
 
@@ -1518,19 +1436,19 @@ function rebuildYear(year, options) {
         nextyearlen,
         yearordinal,
         yearweekday }, baseYearMasks(year), { wnomask: null });
-    if (Object(helpers["b" /* empty */])(options.byweekno)) {
+    if ((0,helpers/* empty */.cS)(options.byweekno)) {
         return result;
     }
-    result.wnomask = Object(helpers["k" /* repeat */])(0, yearlen + 7);
+    result.wnomask = (0,helpers/* repeat */.rx)(0, yearlen + 7);
     let firstwkst;
     let wyearlen;
-    let no1wkst = firstwkst = Object(helpers["i" /* pymod */])(7 - yearweekday + options.wkst, 7);
+    let no1wkst = firstwkst = (0,helpers/* pymod */.Vy)(7 - yearweekday + options.wkst, 7);
     if (no1wkst >= 4) {
         no1wkst = 0;
         // Number of days in the year, plus the days we got
         // from last year.
         wyearlen =
-            result.yearlen + Object(helpers["i" /* pymod */])(yearweekday - options.wkst, 7);
+            result.yearlen + (0,helpers/* pymod */.Vy)(yearweekday - options.wkst, 7);
     }
     else {
         // Number of days in the year, minus the days we
@@ -1538,7 +1456,7 @@ function rebuildYear(year, options) {
         wyearlen = yearlen - no1wkst;
     }
     const div = Math.floor(wyearlen / 7);
-    const mod = Object(helpers["i" /* pymod */])(wyearlen, 7);
+    const mod = (0,helpers/* pymod */.Vy)(wyearlen, 7);
     const numweeks = Math.floor(div + mod / 4);
     for (let j = 0; j < options.byweekno.length; j++) {
         let n = options.byweekno[j];
@@ -1565,7 +1483,7 @@ function rebuildYear(year, options) {
                 break;
         }
     }
-    if (Object(helpers["c" /* includes */])(options.byweekno, 1)) {
+    if ((0,helpers/* includes */.q9)(options.byweekno, 1)) {
         // Check week number 1 of next year as well
         // orig-TODO : Check -numweeks for next year.
         let i = no1wkst + numweeks * 7;
@@ -1590,24 +1508,24 @@ function rebuildYear(year, options) {
         // days from last year's last week number in
         // this year.
         let lnumweeks;
-        if (!Object(helpers["c" /* includes */])(options.byweekno, -1)) {
+        if (!(0,helpers/* includes */.q9)(options.byweekno, -1)) {
             const lyearweekday = src_dateutil.getWeekday(new Date(Date.UTC(year - 1, 0, 1)));
-            let lno1wkst = Object(helpers["i" /* pymod */])(7 - lyearweekday.valueOf() + options.wkst, 7);
+            let lno1wkst = (0,helpers/* pymod */.Vy)(7 - lyearweekday.valueOf() + options.wkst, 7);
             const lyearlen = src_dateutil.isLeapYear(year - 1) ? 366 : 365;
             let weekst;
             if (lno1wkst >= 4) {
                 lno1wkst = 0;
-                weekst = lyearlen + Object(helpers["i" /* pymod */])(lyearweekday - options.wkst, 7);
+                weekst = lyearlen + (0,helpers/* pymod */.Vy)(lyearweekday - options.wkst, 7);
             }
             else {
                 weekst = yearlen - no1wkst;
             }
-            lnumweeks = Math.floor(52 + Object(helpers["i" /* pymod */])(weekst, 7) / 4);
+            lnumweeks = Math.floor(52 + (0,helpers/* pymod */.Vy)(weekst, 7) / 4);
         }
         else {
             lnumweeks = -1;
         }
-        if (Object(helpers["c" /* includes */])(options.byweekno, lnumweeks)) {
+        if ((0,helpers/* includes */.q9)(options.byweekno, lnumweeks)) {
             for (let i = 0; i < no1wkst; i++)
                 result.wnomask[i] = 1;
         }
@@ -1646,8 +1564,8 @@ function rebuildMonth(year, month, yearlen, mrange, wdaymask, options) {
         nwdaymask: []
     };
     let ranges = [];
-    if (options.freq === rrule_RRule.YEARLY) {
-        if (Object(helpers["b" /* empty */])(options.bymonth)) {
+    if (options.freq === RRule.YEARLY) {
+        if ((0,helpers/* empty */.cS)(options.bymonth)) {
             ranges = [[0, yearlen]];
         }
         else {
@@ -1657,15 +1575,15 @@ function rebuildMonth(year, month, yearlen, mrange, wdaymask, options) {
             }
         }
     }
-    else if (options.freq === rrule_RRule.MONTHLY) {
+    else if (options.freq === RRule.MONTHLY) {
         ranges = [mrange.slice(month - 1, month + 1)];
     }
-    if (Object(helpers["b" /* empty */])(ranges)) {
+    if ((0,helpers/* empty */.cS)(ranges)) {
         return result;
     }
     // Weekly frequency won't get here, so we may not
     // care about cross-year weekly periods.
-    result.nwdaymask = Object(helpers["k" /* repeat */])(0, yearlen);
+    result.nwdaymask = (0,helpers/* repeat */.rx)(0, yearlen);
     for (let j = 0; j < ranges.length; j++) {
         const rang = ranges[j];
         const first = rang[0];
@@ -1675,11 +1593,11 @@ function rebuildMonth(year, month, yearlen, mrange, wdaymask, options) {
             const [wday, n] = options.bynweekday[k];
             if (n < 0) {
                 i = last + (n + 1) * 7;
-                i -= Object(helpers["i" /* pymod */])(wdaymask[i] - wday, 7);
+                i -= (0,helpers/* pymod */.Vy)(wdaymask[i] - wday, 7);
             }
             else {
                 i = first + (n - 1) * 7;
-                i += Object(helpers["i" /* pymod */])(7 - wdaymask[i] + wday, 7);
+                i += (0,helpers/* pymod */.Vy)(7 - wdaymask[i] + wday, 7);
             }
             if (first <= i && i <= last)
                 result.nwdaymask[i] = 1;
@@ -1720,7 +1638,7 @@ function easter(y, offset = 0) {
 // =============================================================================
 // Iterinfo
 // =============================================================================
-class iterinfo_Iterinfo {
+class Iterinfo {
     constructor(options) {
         this.options = options;
     }
@@ -1729,12 +1647,12 @@ class iterinfo_Iterinfo {
         if (year !== this.lastyear) {
             this.yearinfo = rebuildYear(year, options);
         }
-        if (Object(helpers["g" /* notEmpty */])(options.bynweekday) &&
+        if ((0,helpers/* notEmpty */.Dw)(options.bynweekday) &&
             (month !== this.lastmonth || year !== this.lastyear)) {
             const { yearlen, mrange, wdaymask } = this.yearinfo;
             this.monthinfo = rebuildMonth(year, month, yearlen, mrange, wdaymask, options);
         }
-        if (Object(helpers["f" /* isPresent */])(options.byeaster)) {
+        if ((0,helpers/* isPresent */.EN)(options.byeaster)) {
             this.eastermask = easter(year, options.byeaster);
         }
     }
@@ -1775,19 +1693,19 @@ class iterinfo_Iterinfo {
         return this.yearinfo.nmdaymask;
     }
     ydayset() {
-        return [Object(helpers["j" /* range */])(this.yearlen), 0, this.yearlen];
+        return [(0,helpers/* range */.w6)(this.yearlen), 0, this.yearlen];
     }
     mdayset(_, month, __) {
         const start = this.mrange[month - 1];
         const end = this.mrange[month];
-        const set = Object(helpers["k" /* repeat */])(null, this.yearlen);
+        const set = (0,helpers/* repeat */.rx)(null, this.yearlen);
         for (let i = start; i < end; i++)
             set[i] = i;
         return [set, start, end];
     }
     wdayset(year, month, day) {
         // We need to handle cross-year weeks here.
-        const set = Object(helpers["k" /* repeat */])(null, this.yearlen + 7);
+        const set = (0,helpers/* repeat */.rx)(null, this.yearlen + 7);
         let i = src_dateutil.toOrdinal(new Date(Date.UTC(year, month - 1, day))) -
             this.yearordinal;
         const start = i;
@@ -1800,7 +1718,7 @@ class iterinfo_Iterinfo {
         return [set, start, i];
     }
     ddayset(year, month, day) {
-        const set = Object(helpers["k" /* repeat */])(null, this.yearlen);
+        const set = (0,helpers/* repeat */.rx)(null, this.yearlen);
         const i = src_dateutil.toOrdinal(new Date(Date.UTC(year, month - 1, day))) -
             this.yearordinal;
         set[i] = i;
@@ -1851,16 +1769,16 @@ function buildPoslist(bysetpos, timeset, start, end, ii, dayset) {
         const pos = bysetpos[j];
         if (pos < 0) {
             daypos = Math.floor(pos / timeset.length);
-            timepos = Object(helpers["i" /* pymod */])(pos, timeset.length);
+            timepos = (0,helpers/* pymod */.Vy)(pos, timeset.length);
         }
         else {
             daypos = Math.floor((pos - 1) / timeset.length);
-            timepos = Object(helpers["i" /* pymod */])(pos - 1, timeset.length);
+            timepos = (0,helpers/* pymod */.Vy)(pos - 1, timeset.length);
         }
         const tmp = [];
         for (let k = start; k < end; k++) {
             const val = dayset[k];
-            if (!Object(helpers["f" /* isPresent */])(val))
+            if (!(0,helpers/* isPresent */.EN)(val))
                 continue;
             tmp.push(val);
         }
@@ -1876,7 +1794,7 @@ function buildPoslist(bysetpos, timeset, start, end, ii, dayset) {
         const res = src_dateutil.combine(date, time);
         // XXX: can this ever be in the array?
         // - compare the actual date instead?
-        if (!Object(helpers["c" /* includes */])(poslist, res))
+        if (!(0,helpers/* includes */.q9)(poslist, res))
             poslist.push(res);
     }
     src_dateutil.sort(poslist);
@@ -1899,14 +1817,14 @@ function iter(iterResult, options) {
     if (count === 0 || interval === 0) {
         return emitResult(iterResult);
     }
-    let counterDate = datetime_DateTime.fromDate(dtstart);
-    const ii = new iterinfo_Iterinfo(options);
+    let counterDate = DateTime.fromDate(dtstart);
+    const ii = new Iterinfo(options);
     ii.rebuild(counterDate.year, counterDate.month);
     let timeset = makeTimeset(ii, counterDate, options);
     while (true) {
         let [dayset, start, end] = ii.getdayset(freq)(counterDate.year, counterDate.month, counterDate.day);
         let filtered = removeFilteredDays(dayset, start, end, ii, options);
-        if (Object(helpers["g" /* notEmpty */])(bysetpos)) {
+        if ((0,helpers/* notEmpty */.Dw)(bysetpos)) {
             const poslist = buildPoslist(bysetpos, timeset, start, end, ii, dayset);
             for (let j = 0; j < poslist.length; j++) {
                 const res = poslist[j];
@@ -1930,7 +1848,7 @@ function iter(iterResult, options) {
         else {
             for (let j = start; j < end; j++) {
                 const currentDay = dayset[j];
-                if (!Object(helpers["f" /* isPresent */])(currentDay)) {
+                if (!(0,helpers/* isPresent */.EN)(currentDay)) {
                     continue;
                 }
                 const date = src_dateutil.fromOrdinal(ii.yearordinal + currentDay);
@@ -1971,24 +1889,24 @@ function iter(iterResult, options) {
 }
 function isFiltered(ii, currentDay, options) {
     const { bymonth, byweekno, byweekday, byeaster, bymonthday, bynmonthday, byyearday } = options;
-    return ((Object(helpers["g" /* notEmpty */])(bymonth) && !Object(helpers["c" /* includes */])(bymonth, ii.mmask[currentDay])) ||
-        (Object(helpers["g" /* notEmpty */])(byweekno) && !ii.wnomask[currentDay]) ||
-        (Object(helpers["g" /* notEmpty */])(byweekday) && !Object(helpers["c" /* includes */])(byweekday, ii.wdaymask[currentDay])) ||
-        (Object(helpers["g" /* notEmpty */])(ii.nwdaymask) && !ii.nwdaymask[currentDay]) ||
-        (byeaster !== null && !Object(helpers["c" /* includes */])(ii.eastermask, currentDay)) ||
-        ((Object(helpers["g" /* notEmpty */])(bymonthday) || Object(helpers["g" /* notEmpty */])(bynmonthday)) &&
-            !Object(helpers["c" /* includes */])(bymonthday, ii.mdaymask[currentDay]) &&
-            !Object(helpers["c" /* includes */])(bynmonthday, ii.nmdaymask[currentDay])) ||
-        (Object(helpers["g" /* notEmpty */])(byyearday) &&
+    return (((0,helpers/* notEmpty */.Dw)(bymonth) && !(0,helpers/* includes */.q9)(bymonth, ii.mmask[currentDay])) ||
+        ((0,helpers/* notEmpty */.Dw)(byweekno) && !ii.wnomask[currentDay]) ||
+        ((0,helpers/* notEmpty */.Dw)(byweekday) && !(0,helpers/* includes */.q9)(byweekday, ii.wdaymask[currentDay])) ||
+        ((0,helpers/* notEmpty */.Dw)(ii.nwdaymask) && !ii.nwdaymask[currentDay]) ||
+        (byeaster !== null && !(0,helpers/* includes */.q9)(ii.eastermask, currentDay)) ||
+        (((0,helpers/* notEmpty */.Dw)(bymonthday) || (0,helpers/* notEmpty */.Dw)(bynmonthday)) &&
+            !(0,helpers/* includes */.q9)(bymonthday, ii.mdaymask[currentDay]) &&
+            !(0,helpers/* includes */.q9)(bynmonthday, ii.nmdaymask[currentDay])) ||
+        ((0,helpers/* notEmpty */.Dw)(byyearday) &&
             ((currentDay < ii.yearlen &&
-                !Object(helpers["c" /* includes */])(byyearday, currentDay + 1) &&
-                !Object(helpers["c" /* includes */])(byyearday, -ii.yearlen + currentDay)) ||
+                !(0,helpers/* includes */.q9)(byyearday, currentDay + 1) &&
+                !(0,helpers/* includes */.q9)(byyearday, -ii.yearlen + currentDay)) ||
                 (currentDay >= ii.yearlen &&
-                    !Object(helpers["c" /* includes */])(byyearday, currentDay + 1 - ii.yearlen) &&
-                    !Object(helpers["c" /* includes */])(byyearday, -ii.nextyearlen + currentDay - ii.yearlen)))));
+                    !(0,helpers/* includes */.q9)(byyearday, currentDay + 1 - ii.yearlen) &&
+                    !(0,helpers/* includes */.q9)(byyearday, -ii.nextyearlen + currentDay - ii.yearlen)))));
 }
 function rezoneIfNeeded(date, options) {
-    return new datewithzone_DateWithZone(date, options.tzid).rezonedDate();
+    return new DateWithZone(date, options.tzid).rezonedDate();
 }
 function emitResult(iterResult) {
     return iterResult.getValue();
@@ -2008,15 +1926,15 @@ function makeTimeset(ii, counterDate, options) {
     if (freqIsDailyOrGreater(freq)) {
         return buildTimeset(options);
     }
-    if ((freq >= rrule_RRule.HOURLY &&
-        Object(helpers["g" /* notEmpty */])(byhour) &&
-        !Object(helpers["c" /* includes */])(byhour, counterDate.hour)) ||
-        (freq >= rrule_RRule.MINUTELY &&
-            Object(helpers["g" /* notEmpty */])(byminute) &&
-            !Object(helpers["c" /* includes */])(byminute, counterDate.minute)) ||
-        (freq >= rrule_RRule.SECONDLY &&
-            Object(helpers["g" /* notEmpty */])(bysecond) &&
-            !Object(helpers["c" /* includes */])(bysecond, counterDate.second))) {
+    if ((freq >= RRule.HOURLY &&
+        (0,helpers/* notEmpty */.Dw)(byhour) &&
+        !(0,helpers/* includes */.q9)(byhour, counterDate.hour)) ||
+        (freq >= RRule.MINUTELY &&
+            (0,helpers/* notEmpty */.Dw)(byminute) &&
+            !(0,helpers/* includes */.q9)(byminute, counterDate.minute)) ||
+        (freq >= RRule.SECONDLY &&
+            (0,helpers/* notEmpty */.Dw)(bysecond) &&
+            !(0,helpers/* includes */.q9)(bysecond, counterDate.second))) {
         return [];
     }
     return ii.gettimeset(freq)(counterDate.hour, counterDate.minute, counterDate.second, counterDate.millisecond);
@@ -2036,7 +1954,7 @@ function makeTimeset(ii, counterDate, options) {
 const getnlp = function () {
     // Lazy, runtime import to avoid circular refs.
     if (!getnlp._nlp) {
-        getnlp._nlp = __webpack_require__(3);
+        getnlp._nlp = __webpack_require__(705);
     }
     return getnlp._nlp;
 };
@@ -2075,17 +1993,17 @@ const DEFAULT_OPTIONS = {
     bysecond: null,
     byeaster: null
 };
-const rrule_defaultKeys = Object.keys(DEFAULT_OPTIONS);
+const defaultKeys = Object.keys(DEFAULT_OPTIONS);
 /**
  *
  * @param {Options?} options - see <http://labix.org/python-dateutil/#head-cf004ee9a75592797e076752b2a889c10f445418>
  *        The only required option is `freq`, one of RRule.YEARLY, RRule.MONTHLY, ...
  * @constructor
  */
-class rrule_RRule {
+class RRule {
     constructor(options = {}, noCache = false) {
         // RFC string
-        this._cache = noCache ? null : new cache_Cache();
+        this._cache = noCache ? null : new Cache();
         // used by toString()
         this.origOptions = initializeOptions(options);
         const { parsedOptions } = parseOptions(options);
@@ -2109,7 +2027,7 @@ class rrule_RRule {
          *
          * TODO: ^^^
          */
-        return new rrule_RRule(rrule_RRule.parseString(str) || undefined);
+        return new RRule(RRule.parseString(str) || undefined);
     }
     _iter(iterResult) {
         return iter(iterResult, this.options);
@@ -2132,7 +2050,7 @@ class rrule_RRule {
      */
     all(iterator) {
         if (iterator) {
-            return this._iter(new callbackiterresult_CallbackIterResult('all', {}, iterator));
+            return this._iter(new CallbackIterResult('all', {}, iterator));
         }
         let result = this._cacheGet('all');
         if (result === false) {
@@ -2157,7 +2075,7 @@ class rrule_RRule {
             inc
         };
         if (iterator) {
-            return this._iter(new callbackiterresult_CallbackIterResult('between', args, iterator));
+            return this._iter(new CallbackIterResult('between', args, iterator));
         }
         let result = this._cacheGet('between', args);
         if (result === false) {
@@ -2230,11 +2148,11 @@ class rrule_RRule {
      *          as this one (cache is not cloned)
      */
     clone() {
-        return new rrule_RRule(this.origOptions);
+        return new RRule(this.origOptions);
     }
 }
 // RRule class 'constants'
-rrule_RRule.FREQUENCIES = [
+RRule.FREQUENCIES = [
     'YEARLY',
     'MONTHLY',
     'WEEKLY',
@@ -2243,22 +2161,22 @@ rrule_RRule.FREQUENCIES = [
     'MINUTELY',
     'SECONDLY'
 ];
-rrule_RRule.YEARLY = Frequency.YEARLY;
-rrule_RRule.MONTHLY = Frequency.MONTHLY;
-rrule_RRule.WEEKLY = Frequency.WEEKLY;
-rrule_RRule.DAILY = Frequency.DAILY;
-rrule_RRule.HOURLY = Frequency.HOURLY;
-rrule_RRule.MINUTELY = Frequency.MINUTELY;
-rrule_RRule.SECONDLY = Frequency.SECONDLY;
-rrule_RRule.MO = Days.MO;
-rrule_RRule.TU = Days.TU;
-rrule_RRule.WE = Days.WE;
-rrule_RRule.TH = Days.TH;
-rrule_RRule.FR = Days.FR;
-rrule_RRule.SA = Days.SA;
-rrule_RRule.SU = Days.SU;
-rrule_RRule.parseString = parseString;
-rrule_RRule.optionsToString = optionsToString;
+RRule.YEARLY = Frequency.YEARLY;
+RRule.MONTHLY = Frequency.MONTHLY;
+RRule.WEEKLY = Frequency.WEEKLY;
+RRule.DAILY = Frequency.DAILY;
+RRule.HOURLY = Frequency.HOURLY;
+RRule.MINUTELY = Frequency.MINUTELY;
+RRule.SECONDLY = Frequency.SECONDLY;
+RRule.MO = Days.MO;
+RRule.TU = Days.TU;
+RRule.WE = Days.WE;
+RRule.TH = Days.TH;
+RRule.FR = Days.FR;
+RRule.SA = Days.SA;
+RRule.SU = Days.SU;
+RRule.parseString = parseString;
+RRule.optionsToString = optionsToString;
 
 // CONCATENATED MODULE: ./src/iterset.ts
 
@@ -2275,7 +2193,7 @@ function iterSet(iterResult, _rrule, _exrule, _rdate, _exdate, tzid) {
         });
     }
     _exdate.forEach(function (date) {
-        const zonedDate = new datewithzone_DateWithZone(date, tzid).rezonedDate();
+        const zonedDate = new DateWithZone(date, tzid).rezonedDate();
         _exdateHash[Number(zonedDate)] = true;
     });
     iterResult.accept = function (date) {
@@ -2301,7 +2219,7 @@ function iterSet(iterResult, _rrule, _exrule, _rdate, _exdate, tzid) {
         };
     }
     for (let i = 0; i < _rdate.length; i++) {
-        const zonedDate = new datewithzone_DateWithZone(_rdate[i], tzid).rezonedDate();
+        const zonedDate = new DateWithZone(_rdate[i], tzid).rezonedDate();
         if (!iterResult.accept(new Date(zonedDate.getTime())))
             break;
     }
@@ -2427,18 +2345,18 @@ function buildRule(s, options) {
         rdatevals.length ||
         exrulevals.length ||
         exdatevals.length) {
-        const rset = new rruleset_RRuleSet(noCache);
+        const rset = new RRuleSet(noCache);
         rset.dtstart(dtstart);
         rset.dtend(dtend);
         rset.tzid(tzid || undefined);
         rrulevals.forEach(val => {
-            rset.rrule(new rrule_RRule(groomRruleOptions(val, dtstart, dtend, dtvalue, tzid), noCache));
+            rset.rrule(new RRule(groomRruleOptions(val, dtstart, dtend, dtvalue, tzid), noCache));
         });
         rdatevals.forEach(date => {
             rset.rdate(date);
         });
         exrulevals.forEach(val => {
-            rset.exrule(new rrule_RRule(groomRruleOptions(val, dtstart, dtend, dtvalue, tzid), noCache));
+            rset.exrule(new RRule(groomRruleOptions(val, dtstart, dtend, dtvalue, tzid), noCache));
         });
         exdatevals.forEach(date => {
             rset.exdate(date);
@@ -2448,7 +2366,7 @@ function buildRule(s, options) {
         return rset;
     }
     const val = rrulevals[0] || {};
-    return new rrule_RRule(groomRruleOptions(val, val.dtstart || options.dtstart || dtstart, val.dtend || options.dtend || dtend, val.dtvalue || options.dtvalue || dtvalue, val.tzid || options.tzid || tzid), noCache);
+    return new RRule(groomRruleOptions(val, val.dtstart || options.dtstart || dtstart, val.dtend || options.dtend || dtend, val.dtvalue || options.dtvalue || dtvalue, val.tzid || options.tzid || tzid), noCache);
 }
 function rrulestr(s, options = {}) {
     return buildRule(s, rrulestr_initializeOptions(options));
@@ -2464,7 +2382,7 @@ function rrulestr_initializeOptions(options) {
     const keys = Object.keys(options);
     const defaultKeys = Object.keys(rrulestr_DEFAULT_OPTIONS);
     keys.forEach(function (key) {
-        if (!Object(helpers["c" /* includes */])(defaultKeys, key))
+        if (!(0,helpers/* includes */.q9)(defaultKeys, key))
             invalid.push(key);
     });
     if (invalid.length) {
@@ -2473,7 +2391,7 @@ function rrulestr_initializeOptions(options) {
     const initializedOptions = Object.assign({}, options);
     // Merge in default options
     defaultKeys.forEach(function (key) {
-        if (!Object(helpers["c" /* includes */])(keys, key))
+        if (!(0,helpers/* includes */.q9)(keys, key))
             initializedOptions[key] = rrulestr_DEFAULT_OPTIONS[key];
     });
     return initializedOptions;
@@ -2485,7 +2403,7 @@ function extractName(line) {
             value: line
         };
     }
-    const [name, value] = Object(helpers["l" /* split */])(line, ':', 1);
+    const [name, value] = (0,helpers/* split */.Vl)(line, ':', 1);
     return {
         name,
         value
@@ -2566,7 +2484,7 @@ function createGetterSetter(fieldName) {
         }
     };
 }
-class rruleset_RRuleSet extends rrule_RRule {
+class RRuleSet extends RRule {
     /**
      *
      * @param {Boolean?} noCache
@@ -2687,7 +2605,7 @@ class rruleset_RRuleSet extends rrule_RRule {
      * Create a new RRuleSet Object completely base on current instance
      */
     clone() {
-        const rrs = new rruleset_RRuleSet(!!this._cache);
+        const rrs = new RRuleSet(!!this._cache);
         this._rrule.forEach(rule => rrs.rrule(rule.clone()));
         this._exrule.forEach(rule => rrs.exrule(rule.clone()));
         this._rdate.forEach(date => rrs.rdate(new Date(date.getTime())));
@@ -2696,10 +2614,10 @@ class rruleset_RRuleSet extends rrule_RRule {
     }
 }
 function _addRule(rrule, collection) {
-    if (!(rrule instanceof rrule_RRule)) {
+    if (!(rrule instanceof RRule)) {
         throw new TypeError(String(rrule) + ' is not RRule instance');
     }
-    if (!Object(helpers["c" /* includes */])(collection.map(String), String(rrule))) {
+    if (!(0,helpers/* includes */.q9)(collection.map(String), String(rrule))) {
         collection.push(rrule);
     }
 }
@@ -2707,7 +2625,7 @@ function _addDate(date, collection) {
     if (!(date instanceof Date)) {
         throw new TypeError(String(date) + ' is not Date instance');
     }
-    if (!Object(helpers["c" /* includes */])(collection.map(Number), Number(date))) {
+    if (!(0,helpers/* includes */.q9)(collection.map(Number), Number(date))) {
         collection.push(date);
         src_dateutil.sort(collection);
     }
@@ -2746,28 +2664,24 @@ function rdatesToString(param, rdates, tzid) {
 // Export
 // =============================================================================
 
-/* harmony default export */ var src = __webpack_exports__["default"] = (rrule_RRule);
+/* harmony default export */ const src = (RRule);
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__2__;
+/***/ 705:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "fromText", function() { return /* binding */ fromText; });
-__webpack_require__.d(__webpack_exports__, "parseText", function() { return /* reexport */ parseText; });
-__webpack_require__.d(__webpack_exports__, "isFullyConvertible", function() { return /* binding */ isFullyConvertible; });
-__webpack_require__.d(__webpack_exports__, "toText", function() { return /* binding */ toText; });
+__webpack_require__.d(__webpack_exports__, {
+  "fromText": () => /* binding */ fromText,
+  "isFullyConvertible": () => /* binding */ isFullyConvertible,
+  "parseText": () => /* reexport */ parseText,
+  "toText": () => /* binding */ toText
+});
 
 // CONCATENATED MODULE: ./src/nlp/i18n.ts
 // =============================================================================
@@ -2828,14 +2742,12 @@ const ENGLISH = {
         'comma': /^(,\s*|(and|or)\s*)+/i
     }
 };
-/* harmony default export */ var i18n = (ENGLISH);
+/* harmony default export */ const i18n = (ENGLISH);
 
 // EXTERNAL MODULE: ./src/index.ts + 22 modules
-var src = __webpack_require__(1);
-
+var src = __webpack_require__(906);
 // EXTERNAL MODULE: ./src/helpers.ts
-var helpers = __webpack_require__(0);
-
+var helpers = __webpack_require__(382);
 // CONCATENATED MODULE: ./src/nlp/totext.ts
 
 
@@ -2859,7 +2771,7 @@ const defaultDateFormatter = (year, month, day) => `${month} ${day}, ${year}`;
  * @param {Object} language definition
  * @constructor
  */
-class totext_ToText {
+class ToText {
     constructor(rrule, gettext = defaultGetText, language = i18n, dateFormatter = defaultDateFormatter) {
         this.text = [];
         this.language = language || i18n;
@@ -2878,8 +2790,8 @@ class totext_ToText {
             if (!this.bymonthday.length)
                 this.bymonthday = null;
         }
-        if (Object(helpers["f" /* isPresent */])(this.origOptions.byweekday)) {
-            const byweekday = !Object(helpers["d" /* isArray */])(this.origOptions.byweekday)
+        if ((0,helpers/* isPresent */.EN)(this.origOptions.byweekday)) {
+            const byweekday = !(0,helpers/* isArray */.kJ)(this.origOptions.byweekday)
                 ? [this.origOptions.byweekday]
                 : this.origOptions.byweekday;
             const days = String(byweekday);
@@ -2926,20 +2838,20 @@ class totext_ToText {
      */
     static isFullyConvertible(rrule) {
         let canConvert = true;
-        if (!(rrule.options.freq in totext_ToText.IMPLEMENTED))
+        if (!(rrule.options.freq in ToText.IMPLEMENTED))
             return false;
         if (rrule.origOptions.until && rrule.origOptions.count)
             return false;
         for (let key in rrule.origOptions) {
             if (contains(['dtstart', 'dtend', 'wkst', 'freq'], key))
                 return true;
-            if (!contains(totext_ToText.IMPLEMENTED[rrule.options.freq], key))
+            if (!contains(ToText.IMPLEMENTED[rrule.options.freq], key))
                 return false;
         }
         return canConvert;
     }
     isFullyConvertible() {
-        return totext_ToText.isFullyConvertible(this.rrule);
+        return ToText.isFullyConvertible(this.rrule);
     }
     /**
      * Perform the conversion. Only some of the frequencies are supported.
@@ -2949,12 +2861,12 @@ class totext_ToText {
      */
     toString() {
         const gettext = this.gettext;
-        if (!(this.options.freq in totext_ToText.IMPLEMENTED)) {
+        if (!(this.options.freq in ToText.IMPLEMENTED)) {
             return gettext('RRule error: Unable to fully convert this rrule to text');
         }
         this.text = [gettext('every')];
         // @ts-ignore
-        this[src["default"].FREQUENCIES[this.options.freq]]();
+        this[src.default.FREQUENCIES[this.options.freq]]();
         if (this.options.until) {
             this.add(gettext('until'));
             const until = this.options.until;
@@ -3170,7 +3082,7 @@ class totext_ToText {
         return this.language.monthNames[m - 1];
     }
     weekdaytext(wday) {
-        const weekday = Object(helpers["e" /* isNumber */])(wday) ? (wday + 1) % 7 : wday.getJsWeekday();
+        const weekday = (0,helpers/* isNumber */.hj)(wday) ? (wday + 1) % 7 : wday.getJsWeekday();
         return ((wday.n ? this.nth(wday.n) + ' ' : '') + this.language.dayNames[weekday]);
     }
     plural(n) {
@@ -3182,7 +3094,7 @@ class totext_ToText {
         return this;
     }
     list(arr, callback, finalDelim, delim = ',') {
-        if (!Object(helpers["d" /* isArray */])(arr)) {
+        if (!(0,helpers/* isArray */.kJ)(arr)) {
             arr = [arr];
         }
         const delimJoin = function (array, delimiter, finalDelimiter) {
@@ -3314,7 +3226,7 @@ function parseText(text, language = i18n) {
             throw new Error('Unexpected end');
         switch (ttr.symbol) {
             case 'day(s)':
-                options.freq = src["default"].DAILY;
+                options.freq = src.default.DAILY;
                 if (ttr.nextSymbol()) {
                     AT();
                     F();
@@ -3323,47 +3235,47 @@ function parseText(text, language = i18n) {
             // FIXME Note: every 2 weekdays != every two weeks on weekdays.
             // DAILY on weekdays is not a valid rule
             case 'weekday(s)':
-                options.freq = src["default"].WEEKLY;
+                options.freq = src.default.WEEKLY;
                 options.byweekday = [
-                    src["default"].MO,
-                    src["default"].TU,
-                    src["default"].WE,
-                    src["default"].TH,
-                    src["default"].FR
+                    src.default.MO,
+                    src.default.TU,
+                    src.default.WE,
+                    src.default.TH,
+                    src.default.FR
                 ];
                 ttr.nextSymbol();
                 F();
                 break;
             case 'week(s)':
-                options.freq = src["default"].WEEKLY;
+                options.freq = src.default.WEEKLY;
                 if (ttr.nextSymbol()) {
                     ON();
                     F();
                 }
                 break;
             case 'hour(s)':
-                options.freq = src["default"].HOURLY;
+                options.freq = src.default.HOURLY;
                 if (ttr.nextSymbol()) {
                     ON();
                     F();
                 }
                 break;
             case 'minute(s)':
-                options.freq = src["default"].MINUTELY;
+                options.freq = src.default.MINUTELY;
                 if (ttr.nextSymbol()) {
                     ON();
                     F();
                 }
                 break;
             case 'month(s)':
-                options.freq = src["default"].MONTHLY;
+                options.freq = src.default.MONTHLY;
                 if (ttr.nextSymbol()) {
                     ON();
                     F();
                 }
                 break;
             case 'year(s)':
-                options.freq = src["default"].YEARLY;
+                options.freq = src.default.YEARLY;
                 if (ttr.nextSymbol()) {
                     ON();
                     F();
@@ -3376,9 +3288,9 @@ function parseText(text, language = i18n) {
             case 'friday':
             case 'saturday':
             case 'sunday':
-                options.freq = src["default"].WEEKLY;
+                options.freq = src.default.WEEKLY;
                 const key = ttr.symbol.substr(0, 2).toUpperCase();
-                options.byweekday = [src["default"][key]];
+                options.byweekday = [src.default[key]];
                 if (!ttr.nextSymbol())
                     return;
                 // TODO check for duplicates
@@ -3390,7 +3302,7 @@ function parseText(text, language = i18n) {
                         throw new Error('Unexpected symbol ' + ttr.symbol + ', expected weekday');
                     }
                     // @ts-ignore
-                    options.byweekday.push(src["default"][wkd]);
+                    options.byweekday.push(src.default[wkd]);
                     ttr.nextSymbol();
                 }
                 MDAYs();
@@ -3408,7 +3320,7 @@ function parseText(text, language = i18n) {
             case 'october':
             case 'november':
             case 'december':
-                options.freq = src["default"].YEARLY;
+                options.freq = src.default.YEARLY;
                 options.bymonth = [decodeM()];
                 if (!ttr.nextSymbol())
                     return;
@@ -3447,7 +3359,7 @@ function parseText(text, language = i18n) {
                     if (!options.byweekday)
                         options.byweekday = [];
                     // @ts-ignore
-                    options.byweekday.push(src["default"][wkd].nth(nth));
+                    options.byweekday.push(src.default[wkd].nth(nth));
                 }
                 else {
                     if (!options.bymonthday)
@@ -3463,17 +3375,17 @@ function parseText(text, language = i18n) {
                 if (!options.byweekday)
                     options.byweekday = [];
                 // @ts-ignore
-                options.byweekday.push(src["default"][wkd]);
+                options.byweekday.push(src.default[wkd]);
             }
             else if (ttr.symbol === 'weekday(s)') {
                 ttr.nextSymbol();
                 if (!options.byweekday) {
                     options.byweekday = [
-                        src["default"].MO,
-                        src["default"].TU,
-                        src["default"].WE,
-                        src["default"].TH,
-                        src["default"].FR
+                        src.default.MO,
+                        src.default.TU,
+                        src.default.WE,
+                        src.default.TH,
+                        src.default.FR
                     ];
                 }
             }
@@ -3718,7 +3630,7 @@ function parseText(text, language = i18n) {
  * @return {Object, Boolean} the rule, or null.
  */
 const fromText = function (text, language = i18n) {
-    return new src["default"](parseText(text, language) || undefined);
+    return new src.default(parseText(text, language) || undefined);
 };
 const common = [
     'count',
@@ -3728,24 +3640,92 @@ const common = [
     'bymonthday',
     'bymonth'
 ];
-totext_ToText.IMPLEMENTED = [];
-totext_ToText.IMPLEMENTED[src["default"].HOURLY] = common;
-totext_ToText.IMPLEMENTED[src["default"].MINUTELY] = common;
-totext_ToText.IMPLEMENTED[src["default"].DAILY] = ['byhour'].concat(common);
-totext_ToText.IMPLEMENTED[src["default"].WEEKLY] = common;
-totext_ToText.IMPLEMENTED[src["default"].MONTHLY] = common;
-totext_ToText.IMPLEMENTED[src["default"].YEARLY] = ['byweekno', 'byyearday'].concat(common);
+ToText.IMPLEMENTED = [];
+ToText.IMPLEMENTED[src.default.HOURLY] = common;
+ToText.IMPLEMENTED[src.default.MINUTELY] = common;
+ToText.IMPLEMENTED[src.default.DAILY] = ['byhour'].concat(common);
+ToText.IMPLEMENTED[src.default.WEEKLY] = common;
+ToText.IMPLEMENTED[src.default.MONTHLY] = common;
+ToText.IMPLEMENTED[src.default.YEARLY] = ['byweekno', 'byyearday'].concat(common);
 // =============================================================================
 // Export
 // =============================================================================
 const toText = function (rrule, gettext, language, dateFormatter) {
-    return new totext_ToText(rrule, gettext, language, dateFormatter).toString();
+    return new ToText(rrule, gettext, language, dateFormatter).toString();
 };
-const { isFullyConvertible } = totext_ToText;
+const { isFullyConvertible } = ToText;
 
 
+
+/***/ }),
+
+/***/ 223:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__223__;
 
 /***/ })
-/******/ ]);
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		if(__webpack_module_cache__[moduleId]) {
+/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	// module exports must be returned from runtime so entry inlining is disabled
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(906);
+/******/ })()
+;
 });
 //# sourceMappingURL=rrule.js.map
