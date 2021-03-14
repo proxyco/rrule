@@ -187,10 +187,12 @@ $(function () {
               value = value.split(/[,\s]+/)
             }
             value = value.filter(v => v)
+            // @ts-ignore
             options[key] = value.map(n => parseInt(n, 10))
           } else if (key === 'tzid') {
             options[key] = value as string
           } else {
+            // @ts-ignore
             options[key] = parseInt(value as string, 10)
           }
 

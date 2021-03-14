@@ -7,10 +7,10 @@ export function rebuildYear(year, options) {
     const nextyearlen = dateutil.isLeapYear(year + 1) ? 366 : 365;
     const yearordinal = dateutil.toOrdinal(firstyday);
     const yearweekday = dateutil.getWeekday(firstyday);
-    const result = Object.assign({ yearlen,
+    const result = Object.assign(Object.assign({ yearlen,
         nextyearlen,
         yearordinal,
-        yearweekday }, baseYearMasks(year), { wnomask: null });
+        yearweekday }, baseYearMasks(year)), { wnomask: null });
     if (empty(options.byweekno)) {
         return result;
     }

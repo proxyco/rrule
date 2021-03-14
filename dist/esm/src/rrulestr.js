@@ -129,7 +129,7 @@ export function rrulestr(s, options = {}) {
     return buildRule(s, initializeOptions(options));
 }
 function groomRruleOptions(val, dtstart, dtend, dtvalue, tzid) {
-    return Object.assign({}, val, { dtstart,
+    return Object.assign(Object.assign({}, val), { dtstart,
         dtend,
         dtvalue,
         tzid });
@@ -148,6 +148,7 @@ function initializeOptions(options) {
     const initializedOptions = Object.assign({}, options);
     // Merge in default options
     defaultKeys.forEach(function (key) {
+        // @ts-ignore
         if (!includes(keys, key))
             initializedOptions[key] = DEFAULT_OPTIONS[key];
     });

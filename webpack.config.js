@@ -89,12 +89,13 @@ const demoConfig = {
       $: "jquery",
       jQuery: "jquery"
     }),
-    new CopyWebpackPlugin([
+    new CopyWebpackPlugin({
+      patterns: [
       {
         from: paths.demo.styles,
         to: paths.demoDist
       }
-    ]),
+    ]}),
     new HtmlWebpackPlugin({
       template: paths.demo.template
     })

@@ -26,14 +26,14 @@ export class Time {
     }
 }
 export class DateTime extends Time {
-    static fromDate(date) {
-        return new this(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.valueOf() % 1000);
-    }
     constructor(year, month, day, hour, minute, second, millisecond) {
         super(hour, minute, second, millisecond);
         this.year = year;
         this.month = month;
         this.day = day;
+    }
+    static fromDate(date) {
+        return new this(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds(), date.valueOf() % 1000);
     }
     getWeekday() {
         return dateutil.getWeekday(new Date(this.getTime()));

@@ -11,6 +11,7 @@ export function initializeOptions(options) {
     // Shallow copy for options and origOptions and check for invalid
     keys.forEach(key => {
         const value = options[key];
+        // @ts-ignore
         initializedOptions[key] = value;
         if (!includes(defaultKeys, key))
             invalid.push(key);
@@ -27,6 +28,7 @@ export function parseOptions(options) {
     const keys = Object.keys(options);
     // Merge in default options
     defaultKeys.forEach(key => {
+        // @ts-ignore
         if (!includes(keys, key) || !isPresent(opts[key]))
             opts[key] = DEFAULT_OPTIONS[key];
     });

@@ -223,6 +223,7 @@ function initializeOptions (options: Partial<RRuleStrOptions>) {
 
   // Merge in default options
   defaultKeys.forEach(function (key) {
+    // @ts-ignore
     if (!includes(keys, key)) initializedOptions[key] = DEFAULT_OPTIONS[key]
   })
 
